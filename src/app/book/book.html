@@ -7,12 +7,12 @@
   <div class="jumbotron text-center">
     <h1>Mickey Stanley</h1>
     <p class="lead">
-      Maybe I should write a bio?
+      books
     </p>
   </div>
 
   <div class="row">
-    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
+    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in book.awesomeThings | orderBy:'rank'">
       <div class="thumbnail">
         <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
         <div class="caption">

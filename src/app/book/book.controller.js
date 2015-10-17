@@ -3,10 +3,10 @@
 
   angular
     .module('destanley')
-    .controller('MainController', MainController);
+    .controller('BookController', BookController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec) {
+  function BookController($timeout, webDevTec) {
     var vm = this;
 
     vm.awesomeThings = [];
