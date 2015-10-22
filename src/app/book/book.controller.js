@@ -6,7 +6,7 @@
     .controller('BookController', BookController);
 
   /** @ngInject */
-  function BookController($timeout, webDevTec) {
+  function BookController($timeout, webDevTec, servicesConfig) {
     var vm = this;
 
     vm.awesomeThings = [];
@@ -19,10 +19,10 @@
     }
 
     function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
-
+      vm.awesomeThings = servicesConfig();
+      console.log(vm.awesomeThings);
       angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
+        //awesomeThing.rank = Math.random();
       });
     }
   }

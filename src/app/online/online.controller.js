@@ -6,7 +6,7 @@
     .controller('OnlineController', OnlineController);
 
   /** @ngInject */
-  function OnlineController($timeout, webDevTec) {
+  function OnlineController($timeout, servicesConfig) {
     var vm = this;
 
     vm.awesomeThings = [];
@@ -15,11 +15,11 @@
     activate();
 
     function activate() {
-      getWebDevTec();
+      getData();
     }
 
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
+    function getData() {
+      vm.awesomeThings = servicesConfig();
 
       angular.forEach(vm.awesomeThings, function(awesomeThing) {
         awesomeThing.rank = Math.random();
