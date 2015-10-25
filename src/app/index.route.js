@@ -22,6 +22,11 @@
         controller: 'OnlineController',
         controllerAs: 'online'
       })
+      .when('/video', {
+        templateUrl: 'app/video/video.html',
+        controller: 'VideoController',
+        controllerAs: 'video'
+      })
       .otherwise({
         redirectTo: '/'
       });

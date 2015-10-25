@@ -1,38 +1,38 @@
 [
   {
-  'title': 'Greatest Living Artists',
-  'publication': 'Vanity Fair'
-  'image': '',
-  'link': 'http://www.vanityfair.com/culture/2013/11/greatest-living-artists-poll-results',
+    "title": "Greatest Living Artists",
+    "publication": "Vanity Fair",
+    "image": "",
+    "link": "http://www.vanityfair.com/culture/2013/11/greatest-living-artists-poll-results"
   },
   {
-  'title': 'Norma at the Met',
-  'publication': 'Vanity Fair'
-  'image': '',
-  'link': 'http://www.vanityfair.com/culture/2013/10/norma-met-sondra-radvanovsky',
+    "title": "Norma at the Met",
+    "publication": "Vanity Fair",
+    "image": "",
+    "link": "http://www.vanityfair.com/culture/2013/10/norma-met-sondra-radvanovsky"
   },
   {
-  'title': 'Grace Slick',
-  'publication': 'Vanity Fair'
-  'image': '',
-  'link': 'http://www.vanityfair.com/news/2012/06/jefferson-airplane-grace-slick-drugs-painting',
+    "title": "Grace Slick",
+    "publication": "Vanity Fair",
+    "image": "",
+    "link": "http://www.vanityfair.com/news/2012/06/jefferson-airplane-grace-slick-drugs-painting"
   },
   {
-  'title': 'Marie Colvin\'s Passport',
-  'publication': 'Vanity Fair'
-  'image': '',
-  'link': 'http://www.vanityfair.com/news/photos/2012/08/marie-colvin-passport-photos',
+    "title": "Marie Colvin's Passport",
+    "publication": "Vanity Fair",
+    "image": "",
+    "link": "http://www.vanityfair.com/news/photos/2012/08/marie-colvin-passport-photos"
   },
   {
-  'title': 'Jo Nesbo',
-  'publication': 'Goodreads'
-  'image': '',
-  'link': 'http://www.goodreads.com/interviews/show/929.Jo_Nesb_',
+    "title": "Jo Nesbo",
+    "publication": "Goodreads",
+    "image": "",
+    "link": "http://www.goodreads.com/interviews/show/929.Jo_Nesb_"
   },
   {
-  'title': 'TBD',
-  'publication': 'Nylon'
-  'image': '',
-  'link': '',
+    "title": "TBD",
+    "publication": "Nylon",
+    "image": "",
+    "link": ""
   }
 ]
