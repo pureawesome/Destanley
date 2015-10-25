@@ -19,7 +19,7 @@
     }
 
     function getWebDevTec() {
-      vm.awesomeThings = servicesConfig();
+      vm.awesomeThings = servicesConfig.query({}, {'Page': 'book'});
       console.log(vm.awesomeThings);
       angular.forEach(vm.awesomeThings, function(awesomeThing) {
         //awesomeThing.rank = Math.random();

@@ -15,7 +15,7 @@
     activate();
 
     function activate() {
-      //getWebDevTec();
+      getWebDevTec();
     }
 
     function getWebDevTec() {

@@ -6,12 +6,16 @@
     .factory('servicesConfig', servicesConfig);
 
   function servicesConfig($resource, $http) {
-    //var data = $resource('http://localhost:3000/data/book.json', {}, {
-    //  query: {method:'GET', isArray:true}
-    //});
-    return $http.get('http://localhost:3000/data/book.json')
-      .then(dataComplete)
-      .catch(dataFailed);
+    return $resource('http://localhost:3000/data/:Page.json', {}, {
+      query: {'method':'GET', 'params':{'Page': '@Page' }, isArray:true}
+    });
+
+    //var get = $resource('http://localhost:3000/data/book.json');
+  //  console.log(get);
+//    return get;
+    //return $http.get('http://localhost:3000/data/book.json')
+      //.then(dataComplete)
+      //.catch(dataFailed);
 
     function dataComplete(response) {
       console.log(response.data)
