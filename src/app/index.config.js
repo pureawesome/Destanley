@@ -3,7 +3,8 @@
 
   angular
     .module('destanley')
-    .config(config);
+    .config(config)
+    .config(sceDelegate);
 
   /** @ngInject */
   function config($logProvider, toastrConfig) {
@@ -17,5 +18,12 @@
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = true;
   }
+
+  function sceDelegate($sceDelegateProvider) {
+    $sceDelegateProvider.resourceUrlWhitelist([
+      'self',
+      'http://video.nylon.com/**'
+    ]);
+  };
 
 })();
