@@ -1,20 +1,20 @@
 <div class="container">
 
-  <div class="jumbotron text-center">
+  <div class="text-center">
     <h1>Mickey Stanley</h1>
     <p class="lead">
-      books
+      | in book |
     </p>
   </div>
 
   <div class="row">
     <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in book.awesomeThings">
-      <div class="thumbnail">
-        <img class="pull-right" ng-src="assets/images/{{ awesomeThing.image }}" alt="{{ awesomeThing.title }}">
-        <div class="caption">
-          <a ng-href="{{awesomeThing.link}}"><h3>{{ awesomeThing.title }}</h3></a>
-          <p>{{ awesomeThing.publication }}</p>
-        </div>
+      <a ng-href="{{awesomeThing.link}}"><h3>{{ awesomeThing.title }}</h3></a>
+      <a ng-href="{{awesomeThing.link}}">
+        <img class="main-img" ng-src="assets/images/{{ awesomeThing.image }}" alt="{{ awesomeThing.title }}">
+      </a>
+      <div class="caption">
+        <p>{{ awesomeThing.publication }}</p>
       </div>
     </div>
   </div>

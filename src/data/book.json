@@ -2,25 +2,25 @@
   {
     "title": "Gorillaz in Their Midst",
     "publication": "Vanity Fair",
-    "image": "gorillaz.jpg",
+    "image": "gorillaz.png",
     "link": "http://www.vanityfair.com/culture/2013/08/gorillas-opera-monkey-journey-to-west"
   },
   {
     "title": "Killer Solo",
     "publication": "Nylon",
-    "image": "assets/images/",
+    "image": "killer.png",
     "link": "pdfs/killer_solo.pdf"
   },
   {
     "title": "Jesus is Trending",
     "publication": "Nylon Guys",
-    "image": "assets/images/",
+    "image": "jesus.png",
     "link": "pdfs/jesus_is_trending.pdf"
   },
   {
     "title": "A Long Strange Trip",
     "publication": "Nylon Guys",
-    "image": "assets/images/",
+    "image": "strange.png",
     "link": "pdfs/a_long_strange_trip.pdf"
   }
 ]
