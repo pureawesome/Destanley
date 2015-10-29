@@ -1,8 +1,10 @@
-;(function($) {
-  $(document).ready(){
+(function($) {
+  'use strict';
+
+  $(document).ready(function() {
     var $nav = $('.nav li');
 
-    $nav.forEach(function(){
+    $nav.each(function(){
       $(this).on('click', function(){
         $nav.removeClass('active');
         $(this).addClass('active');
