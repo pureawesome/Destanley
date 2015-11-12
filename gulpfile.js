@@ -27,3 +27,17 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
+
+var gulp = require('gulp');
+var rsync = require('gulp-rsync');
+
+gulp.task('deploy', function() {
+  return gulp.src('dist/**')
+    .pipe(rsync({
+      root: 'dist',
+      hostname: 's61349.gridserver.com',
+      username: 'pureawesome.com',
+      destination: '~/domains/mickeystanley.com/html',
+      progress: true
+    }));
+});
