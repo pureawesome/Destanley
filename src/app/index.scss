@@ -4,6 +4,8 @@
  */
 $navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$brand-primary: #000;
+$link-color: #555;
 
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
@@ -29,11 +31,8 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
   float: right;
 }
 
-a {
-  color: #555;
-  &:hover {
-    color: #000;
-  }
+.navbar-toggle .icon-bar {
+  background-color: #555;
 }
 
 .navbar-brand {
@@ -59,25 +58,33 @@ a {
 
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter,
-.animate-repeat.ng-leave {
+.animate-repeat.ng-leave,
+.ng-enter,
+.ng-leave {
   transition:all linear 0.5s;
 }
 
 .animate-repeat.ng-leave.ng-leave-active,
 .animate-repeat.ng-move,
-.animate-repeat.ng-enter {
+.animate-repeat.ng-enter,
+.ng-enter,
+.ng-leave.ng-leave-active {
   opacity:0;
+  margin-top: 30px;
 }
 
 .animate-repeat.ng-leave,
 .animate-repeat.ng-move.ng-move-active,
-.animate-repeat.ng-enter.ng-enter-active {
+.animate-repeat.ng-enter.ng-enter-active,
+.ng-enter.ng-enter-active,
+.ng-leave {
   opacity:1;
+  margin-top: 0;
 }
 
 .animate-repeat.ng-enter-stagger {
-  transition-delay: 0.1s;
-  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
   transition-duration: 0s;
 }
 

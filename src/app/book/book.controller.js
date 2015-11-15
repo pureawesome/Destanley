@@ -20,10 +20,10 @@
 
     function getData() {
       vm.awesomeThings = servicesConfig.query({}, {'Page': 'book'});
-      
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        //awesomeThing.rank = Math.random();
-      });
+
+      // angular.forEach(vm.awesomeThings, function(awesomeThing) {
+      //   awesomeThing.rank = Math.random();
+      // });
     }
   }
 })();

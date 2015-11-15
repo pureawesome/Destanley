@@ -38,6 +38,7 @@ gulp.task('deploy', function() {
       hostname: 's61349.gridserver.com',
       username: 'pureawesome.com',
       destination: '~/domains/mickeystanley.com/html',
-      progress: true
+      progress: true,
+      recursive: true
     }));
 });

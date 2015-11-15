@@ -5,7 +5,7 @@
     .module('destanley')
     .config(routeConfig);
 
-  function routeConfig($routeProvider, $locationProvider) {
+  function routeConfig($routeProvider /*,$locationProvider*/) {
     $routeProvider
       .when('/', {
         templateUrl: 'app/main/main.html',
@@ -31,12 +31,12 @@
         redirectTo: '/'
       });
 
-      if (window.history && window.history.pushState) {
-       $locationProvider.html5Mode({
-         enabled: true,
-         requireBase: true
-        });
-      }
+      // if (window.history && window.history.pushState) {
+      //  $locationProvider.html5Mode({
+      //    enabled: true,
+      //    requireBase: true
+      //   });
+      // }
   }
 
 })();

@@ -5,7 +5,7 @@
     .module('destanley')
     .factory('servicesConfig', servicesConfig);
 
-  function servicesConfig($resource, $http) {
+  function servicesConfig($resource) {
     return $resource('/data/:Page.json', {}, {
       query: {'method':'GET', 'params':{'Page': '@Page' }, isArray:true}
     });

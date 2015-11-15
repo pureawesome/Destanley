@@ -21,9 +21,9 @@
     function getData() {
       vm.awesomeThings = servicesConfig.query({}, {'Page': 'online'});
 
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        //awesomeThing.rank = Math.random();
-      });
+      // angular.forEach(vm.awesomeThings, function(awesomeThing) {
+      //   awesomeThing.rank = Math.random();
+      // });
     }
   }
 })();

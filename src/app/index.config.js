@@ -24,6 +24,6 @@
       'self',
       'http://video.nylon.com/**'
     ]);
-  };
+  }
 
 })();
