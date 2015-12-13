@@ -43,6 +43,12 @@ $link-color: #555;
   background: transparent;
 }
 
+.caption {
+  width: 100%;
+  text-align: right;
+  display: block;
+}
+
 .nav > li > a:hover,
 .nav > li > a:focus,
 .nav > li.active > a {
@@ -55,45 +61,122 @@ $link-color: #555;
   list-style:none;
   box-sizing:border-box;
 }
+//
+// .animate-repeat.ng-move,
+// .animate-repeat.ng-enter,
+// .animate-repeat.ng-leave,
+// .ng-enter,
+// .ng-leave {
+//   transition:all ease 250ms;
+// }
+// //
+// // .animate-repeat.ng-leave.ng-leave-active,
+// // .animate-repeat.ng-move,
+// // .animate-repeat.ng-enter,
+// .ng-enter
+// // .ng-leave.ng-leave-active
+// {
+//   opacity:0.2;
+//   margin-top: 30px;
+// }
+//
+// // .animate-repeat.ng-leave,
+// // .animate-repeat.ng-move.ng-move-active,
+// // .animate-repeat.ng-enter.ng-enter-active,
+// .ng-enter-active,
+// // .ng-leave
+// {
+//   opacity:1;
+//   margin-top: 0;
+// }
+//
+// .animate-repeat.ng-enter-stagger {
+//   transition-delay: 1s;
+//   -webkit-transition-delay: 1s;
+//   transition-duration: 0s;
+//   -webkit-transition-duration: 0s ;
+// }
+//
+// .fade.ng-enter {
+//   animation: 0.5s appear;
+// }
+//
+// .fade.ng-leave {
+//   animation: 0.5s disappear;
+// }
 
-.animate-repeat.ng-move,
-.animate-repeat.ng-enter,
-.animate-repeat.ng-leave,
-.ng-enter,
-.ng-leave {
-  transition:all linear 0.5s;
+.repeat-animation.ng-enter-stagger {
+  /* 200ms will be applied between each sucessive enter operation */
+  -webkit-transition-delay:0.2s;
+  transition-delay:0.2s;
+
+  /* this is here to avoid accidental CSS inheritance */
+  -webkit-transition-duration:0;
+  transition-duration:0;
 }
 
-.animate-repeat.ng-leave.ng-leave-active,
-.animate-repeat.ng-move,
-.animate-repeat.ng-enter,
-.ng-enter,
-.ng-leave.ng-leave-active {
+.repeat-animation.ng-enter {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+
   opacity:0;
-  margin-top: 30px;
+  // line-height:0;
+  margin-top: 20px;
 }
 
-.animate-repeat.ng-leave,
-.animate-repeat.ng-move.ng-move-active,
-.animate-repeat.ng-enter.ng-enter-active,
-.ng-enter.ng-enter-active,
-.ng-leave {
+.repeat-animation.ng-enter.ng-enter-active {
   opacity:1;
+  // line-height:20px;
   margin-top: 0;
 }
 
-.animate-repeat.ng-enter-stagger {
-  transition-delay: 0.2s;
-  -webkit-transition-delay: 0.2s;
-  transition-duration: 0s;
+.repeat-animation.ng-enter-stagger,
+.repeat-animation.ng-leave-stagger,
+.repeat-animation.ng-move-stagger {
+  /* 200ms will be applied between each sucessive enter operation */
+  -webkit-transition-delay:0.2s;
+  transition-delay:0.2s;
 }
 
-.fade.ng-enter {
-  animation: 2s appear;
+.repeat-animation.ng-enter,
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
 }
 
-.fade.ng-leave {
-  animation: 1s disappear;
+.repeat-animation.ng-leave.ng-leave-active,
+.repeat-animation.ng-enter,
+.repeat-animation.ng-move {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+
+  opacity:0;
+  // line-height:0;
+}
+
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move.ng-move-active,
+.repeat-animation.ng-enter.ng-enter-active {
+  opacity:1;
+  // line-height:20px;
+}
+
+.repeat-animation.ng-enter-stagger,
+.repeat-animation.ng-leave-stagger,
+.repeat-animation.ng-move-stagger {
+  /* notice how we're using animation instead of transition here */
+  -webkit-animation-delay:0.2s;
+  animation-delay:0.2s;
+
+  /* yes we still need to do this too */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+
+.repeat-animation.ng-enter {
+  /* pre-reflow animation styling */
+  opacity:0;
 }
 
 /**

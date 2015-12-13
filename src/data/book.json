@@ -22,5 +22,17 @@
     "publication": "Nylon Guys",
     "image": "strange.jpg",
     "link": "pdfs/a_long_strange_trip.pdf"
+  },
+  {
+    "title": "Journey to the Center of America",
+    "publication": "Nylon",
+    "image": "kansas.jpg",
+    "link": "pdfs/kansas.pdf"
+  },
+  {
+    "title": "Soldier of Fortune",
+    "publication": "Man of the World",
+    "image": "soldier.jpg",
+    "link": "pdfs/soldier_of_fortune.pdf"
   }
 ]
